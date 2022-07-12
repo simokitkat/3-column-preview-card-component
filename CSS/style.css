@@ -16,7 +16,7 @@ main {
 section {
     width: 70%;
     min-height: 450px;
-    min-width: 325px;
+    min-width: 250px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
