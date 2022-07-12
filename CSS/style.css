@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    min-height: calc(100vh - 15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 70%;
+    min-height: 450px;
+    min-width: 325px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 850px) {
+    section {
+        grid-template-columns: 1fr;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+section>div {
+    padding: 30px;
+    position: relative;
+}
+
+.sedans {
+    background-color: #e28525;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+@media (max-width: 850px) {
+    .sedans {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
+    }
+}
+
+.suvs {
+    background-color: #016972;
+}
+
+.luxury {
+    background-color: #00403f;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media (max-width: 850px) {
+    .luxury {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+    }
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+button {
+    position: absolute;
+    bottom: 30px;
+    background-color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.sedans>button {
+    color: #e28525;
+}
+
+.suvs>button {
+    color: #016972;
+}
+
+.luxury>button {
+    color: #00403f;
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
